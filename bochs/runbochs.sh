@@ -14,4 +14,4 @@ sed  -i 's/vga_update_interval: 300000/#vga_update_interval: 300000/g'  bochsrc-
 
 sed  -i 's/vga_update_interval: 300000/#vga_update_interval: 300000/g'  bochsrc-0.12-fd.bxrc
 
-bochs -f bochsrc-0.12-hd.bxrc
+bochs -qf bochsrc-0.12-hd.bxrc
