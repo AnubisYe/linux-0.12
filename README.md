@@ -12,6 +12,12 @@
 2. linux 0.12 各个章节笔记
 3. 源码编译脚本及bochs启动运行脚本
 
+```
+Something I hope you know before go into the coding~
+First, please watch or star this repo, I'll be more happy if you follow me.
+Bug report, questions and discussion are welcome, you can post an issue or pull a request.
+```
+
 ## 相关站点
 
 * GitHub地址:<https://github.com/yifengyou/linux-0.12>
@@ -24,5 +30,5 @@
 
 ## 总结
 
-      1.基础永远值得花费90%的精力去学习\&加强。厚积而薄发~
+      1.基础永远值得花费90%的精力去学习加强。厚积而薄发~
       2.要理解一个软件系统的真正运行机制，一定要阅读其源代码~
