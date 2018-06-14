@@ -1,10 +1,48 @@
+# 1 "boot/bootsect.S"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "boot/bootsect.S"
 !
 ! SYS_SIZE is the number of clicks (16 bytes) to be loaded.
 ! 0x3000 is 0x30000 bytes = 196kB, more than enough for current
-! versions of linux
+! versions of 1
 !
-#include <linux/config.h>
-SYSSIZE = DEF_SYSSIZE
+
+# 1 "include/linux/config.h" 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 43 "include/linux/config.h"
+
+# 54 "include/linux/config.h"
+
+# 7 "boot/bootsect.S" 2
+SYSSIZE = 0x3000
 !
 !	bootsect.s		(C) 1991 Linus Torvalds
 !	modified by Drew Eckhardt
@@ -35,9 +73,9 @@ begbss:
 
 SETUPLEN = 4				! nr of setup-sectors
 BOOTSEG  = 0x07c0			! original address of boot-sector
-INITSEG  = DEF_INITSEG			! we move boot here - out of the way
-SETUPSEG = DEF_SETUPSEG			! setup starts here
-SYSSEG   = DEF_SYSSEG			! system loaded at 0x10000 (65536).
+INITSEG  = 0x9000			! we move boot here - out of the way
+SETUPSEG = 0x9020			! setup starts here
+SYSSEG   = 0x1000			! system loaded at 0x10000 (65536).
 ENDSEG   = SYSSEG + SYSSIZE		! where to stop loading
 
 ! ROOT_DEV & SWAP_DEV are now written by "build".
@@ -66,22 +104,8 @@ go:	mov	ax,cs
 
 	mov	ss,ax		! put stack at 0x9ff00 - 12.
 	mov	sp,dx
-/*
- *	Many BIOS's default disk parameter tables will not 
- *	recognize multi-sector reads beyond the maximum sector number
- *	specified in the default diskette parameter tables - this may
- *	mean 7 sectors in some cases.
- *
- *	Since single sector reads are slow and out of the question,
- *	we must take care of this by creating new parameter tables
- *	(for the first disk) in RAM.  We will set the maximum sector
- *	count to 18 - the most we will encounter on an HD 1.44.  
- *
- *	High doesn't hurt.  Low does.
- *
- *	Segments are as follows: ds=es=ss=cs - INITSEG,
- *		fs = 0, gs = parameter table segment
- */
+
+# 85 "boot/bootsect.S"
 
 
 	push	#0
@@ -297,18 +321,8 @@ bad_rt:	push	ax				! save error code
 	popa	
 	jmp read_track
 
-/*
- *	print_all is for debugging purposes.  
- *	It will print out all of the registers.  The assumption is that this is
- *	called from a routine, with a stack frame like
- *	dx 
- *	cx
- *	bx
- *	ax
- *	error
- *	ret <- sp
- *
-*/
+
+# 312 "boot/bootsect.S"
  
 print_all:
 	mov	cx, #5		! error code + 4 registers
@@ -343,10 +357,10 @@ print_nl:
 	int 	0x10
 	ret
 
-/*
- *	print_hex is for debugging purposes, and prints the word
- *	pointed to by ss:bp in hexadecmial.
-*/
+
+
+
+
 
 print_hex:
 	mov	cx, #4		! 4 hex digits
@@ -367,11 +381,11 @@ good_digit:
 	ret
 
 
-/*
- * This procedure turns off the floppy drive motor, so
- * that we enter the kernel in a known state, and
- * don't have to worry about it later.
- */
+
+
+
+
+
 kill_motor:
 	push dx
 	mov dx,#0x3f2
