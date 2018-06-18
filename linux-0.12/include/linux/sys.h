@@ -108,4 +108,5 @@ sys_settimeofday, sys_getgroups, sys_setgroups, sys_select, sys_symlink,
 sys_lstat, sys_readlink, sys_uselib };
 
 /* So we don't have to do any more manual updating.... */
+//NR = number
 int NR_syscalls = sizeof(sys_call_table)/sizeof(fn_ptr);
