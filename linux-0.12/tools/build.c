@@ -146,6 +146,7 @@ int main(int argc, char ** argv)
 		die("Write call failed");
 	close (id);
 	
+	
 	if ((id=open(argv[2],O_RDONLY,0))<0)
 		die("Unable to open 'setup'");
 	if (read(id,buf,MINIX_HEADER) != MINIX_HEADER)
