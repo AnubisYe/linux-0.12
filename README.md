@@ -28,6 +28,16 @@ Bug report, questions and discussion are welcome, you can post an issue or pull 
 
 * 配套网站:<http://oldlinux.org/>
 
+## 思维导图
+
+![1530928925710.png](image/1530928925710.png)
+
+![1530928941007.png](image/1530928941007.png)
+
+![1530928957834.png](image/1530928957834.png)
+
+
+
 ## 总结
 
       1.基础永远值得花费90%的精力去学习加强。厚积而薄发~
