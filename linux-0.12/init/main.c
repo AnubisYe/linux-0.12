@@ -149,7 +149,9 @@ void main(void)		/* This really IS void, no error here. */
  * enable them
  */
 /*
- * 此时中断还被禁止的，做完必要的设置后就将其开启。
+ * 此时中断还被禁止的，做完必要的设置后就将其开启。没有完备的中断响应
+ * 又或者说不可或缺的中断响应，系统一跑起来无法正常响应中断，基本JJ了，
+ * 又或者做法是不去处理，当然还是等准备好了再开启比较合适
  */
  	ROOT_DEV = ORIG_ROOT_DEV;		// ROOT_DEV 定义在 fs/super.c 中。
  	SWAP_DEV = ORIG_SWAP_DEV;		// SWAP_DEV 定义在 mm/swap.c 中。

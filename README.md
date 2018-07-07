@@ -36,6 +36,8 @@ Bug report, questions and discussion are welcome, you can post an issue or pull 
 
 ![1530928957834.png](image/1530928957834.png)
 
+![1530936626048.png](image/1530936626048.png)
+
 
 
 ## 总结
