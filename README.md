@@ -40,6 +40,9 @@ Bug report, questions and discussion are welcome, you can post an issue or pull 
 
 ![1530960311089.png](image/1530960311089.png)
 
+![1531454085477.png](image/1531454085477.png)
+
+
 ## 一些个人看法
 
 * 首先，读者如果是大佬，懂点Linux源码基础的可能会觉得这本书特么的废话注释真多~但身为菜鸡，读过一遍之后回过头来再看，个人觉得有些东西讲的细一点有好处，源码分析不能只讲理论，废话多的注释提供了很多信息，足够详细。但是缺点就是好比嚼烂了喂给你，你说恶心不恶心
@@ -54,3 +57,8 @@ Bug report, questions and discussion are welcome, you can post an issue or pull 
 
 1. 基础永远值得花费90%的精力去学习加强。厚积而薄发~
 2. 要理解一个软件系统的真正运行机制，一定要阅读其源代码~
+
+## 参考博客
+
+咖啡's blog:<https://blog.csdn.net/body100123/article/details/54315858>
+linuxbird:<https://www.cnblogs.com/linuxbird/archive/2013/06/06/3121738.html>
