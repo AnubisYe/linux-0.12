@@ -42,6 +42,9 @@ Bug report, questions and discussion are welcome, you can post an issue or pull 
 
 ![1531454085477.png](image/1531454085477.png)
 
+![1531473293936.png](image/1531473293936.png)
+
+
 
 ## 一些个人看法
 
@@ -62,3 +65,4 @@ Bug report, questions and discussion are welcome, you can post an issue or pull 
 
 咖啡's blog:<https://blog.csdn.net/body100123/article/details/54315858>
 linuxbird:<https://www.cnblogs.com/linuxbird/archive/2013/06/06/3121738.html>
+sfzyk:<https://www.cnblogs.com/sfzyk/p/7467040.html>
